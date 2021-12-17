@@ -25,4 +25,13 @@ class CategoriaController extends BaseController
     }
 
 
+    public function delete($id)
+    {
+        $this->categoriaModel->delete($id);
+        return view('categoria', [
+            'categorias' => $this->categoriaModel->findAll()
+        ]);
+    }
+
+
 }

@@ -13,8 +13,8 @@
     <?php foreach ($categorias as $categoria): ?>
         <p>
             <?php echo $categoria['inv_categoria_nome'] ?>
-            <a href="#">Editar</a>
-            <a href="#">Excluir</a>
+            <?php echo anchor("CategoriaController/edit/".$categoria["inv_categoria_id"], "Editar") ?>
+            <?php echo anchor("CategoriaController/delete/".$categoria["inv_categoria_id"], "Excluir")?>
         </p>
     <?php endforeach ?>
 </body>
