@@ -6,7 +6,6 @@ use App\Controllers\BaseController;
 use App\Models\CategoriaModel;
 
 
-
 class CategoriaController extends BaseController
 {
 
